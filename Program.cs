@@ -26,7 +26,12 @@ namespace Y9_DEC_TO_BIN_SKELETON
         //...this function DOES return a value so the method must have a data type
         static string numberConversion(int number, int numberbase)
         {
-            //CODE GOES HERE
+            Console.Write("Enter an integer: ");
+            int myInt = int.Parse(Console.ReadLine());
+    
+            string binary = Convert.ToString(number, 2);
+    
+            Console.WriteLine($"Binary equivalent: {binary}");
 
             return result; //REMOVE THE RED LINE!
         }
